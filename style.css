@@ -1,0 +1,137 @@
+:root{
+	--blue-color: #388AF7;
+	--title-color:  #313131;
+}
+*, ::before, ::after{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	font-family: 'Poppins', sans-serif;
+}
+/*--------------- header ------------*/
+header{
+	border: 1px solid;
+}
+nav{
+	max-width: 1120px;
+	width: 100%;
+	margin: auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1rem 0.8rem;
+}
+.navbar-brand{
+	width: 20%;
+}
+.navbar-brand img{
+	min-width: 200px;
+	width: 100%;
+}
+nav ul{
+	display: flex;
+	justify-content: space-between;
+}
+ul > li{
+	list-style-type: none;
+}
+li > a{
+	text-decoration: none;
+	display: inline-block;
+	color: var(--title-color);
+	font-weight: 600;
+	padding: 0.8rem 1rem;
+	font-size: 0.85rem;
+}
+.nav__link{
+	color: white;
+	background: linear-gradient( rgba(56, 138, 247, 1), rgba(46, 103, 176, 1));
+	border-radius: 10px;
+	margin-left: 1rem;
+	padding: 0.8rem 1.5rem;
+}
+
+/*------------------- Jumbotron ---------------------*/
+.container{
+	max-width: 1120px;
+	margin: auto;
+	padding: 4rem 0.8rem;
+}
+.jumbo{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+/*----------- Jumbo-left --------*/
+.jumbo__left{
+	max-width: 40%;
+	padding-right: 1rem;
+}
+.jumbo__left h1{
+	font-size: 3.5rem;
+	font-weight: 700;
+	line-height: 4.5rem;
+	color: var(--title-color);
+}
+.jumbo__left p{
+	font-size: 0.9rem;
+	line-height: 1.8rem;
+	color: rgba(49, 49, 49, 0.8);
+	font-weight: 500;
+	font-size: 1rem;
+	margin-top: 1rem;
+}
+.jumbo__links{
+	margin-top: 1.5rem;
+	display: flex;
+	flex-wrap: wrap;
+}
+.jumbo__links a{
+	text-decoration: none;
+	padding: 1rem 1.5rem;
+	font-weight: 600;
+	color: rgba(56, 138, 247, 1);
+	font-size: 0.8rem;
+}
+.jumbo__links a:first-child{
+	background-color: rgba(56, 138, 247, 0.2);
+	border-radius: 5px;
+}
+/*----------- Jumbo-right --------*/
+.jumbo__right img{
+	max-width: 100%;
+}
+@media(max-width: 1050px){
+	.jumbo__left{
+		max-width: 50%;
+	}
+	.jumbo__left h1{
+		font-size: 2.5rem;
+		line-height: 3rem;
+	}
+	.jumbo__left p{
+		font-size: 0.8rem;
+	}
+}
+
+@media(max-width: 741px){
+	nav ul{ display: none; }
+	.jumbo{
+		flex-direction: column;
+	}
+	.jumbo__left{
+		max-width: 100%;
+		padding: 0;
+		text-align: center;
+	}
+	.jumbo__links{
+		justify-content: center;
+		margin-bottom: 1.5rem;
+	}
+	.jumbo__left h1{
+		font-size: 1.5rem;
+		line-height: 2rem;
+	}
+}
