@@ -1,6 +1,7 @@
 :root{
 	--blue-color: #388AF7;
 	--title-color:  #313131;
+	--gren-color: rgba(49, 183, 189, 1);
 }
 *, ::before, ::after{
 	margin: 0;
@@ -92,11 +93,11 @@ li > a{
 	text-decoration: none;
 	padding: 1rem 1.5rem;
 	font-weight: 600;
-	color: rgba(56, 138, 247, 1);
+	color: rgba(49, 183, 189, 1);
 	font-size: 0.8rem;
 }
 .jumbo__links a:first-child{
-	background-color: rgba(56, 138, 247, 0.2);
+	background-color: rgba(49, 183, 189, 0.1);
 	border-radius: 5px;
 }
 /*----------- Jumbo-right --------*/
@@ -151,9 +152,6 @@ li > a{
 	margin-top: -5rem;
 	margin-bottom: 2rem;
 }
-.services img{
-	
-}
 .services p, .services h2{
 	text-align: center;
 }
@@ -169,16 +167,30 @@ li > a{
 	width: 100%;
 	margin: 0.5rem auto;
 }
-@media (max-width: 900px){
-	.services img{
-		/*left: 44%;*/
-	}
-}
 @media (max-width: 700px){
-	.services img{
-		/*left: 40%;*/
-	}
 	.services h2{
 		font-size: 1.3rem;
+	}
+}
+.card-container{
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	margin-top: 2rem;
+}
+.card{
+	text-align: center;
+	padding: 1rem;
+	min-width: 20%;
+}
+.card-title{
+	color: #094998;
+}
+@media (max-width: 768px){
+	.card-container{
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: repeat(2, 1fr);
+	}
+	.card-title{
+		font-size: 0.8rem;
 	}
 }
