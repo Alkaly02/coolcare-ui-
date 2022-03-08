@@ -15,7 +15,11 @@ body{
 	font-family: 'Poppins', sans-serif;
 }
 /*--------------- header ------------*/
-
+header{
+	background-color: white;
+	position: sticky;
+	top: 0;
+}
 nav{
 	max-width: 1120px;
 	width: 100%;
