@@ -19,9 +19,9 @@
 		<nav>
 			<a href="#" class="navbar-brand"><img src="./images/logo.png" alt="Coolcare"></a>
 			<ul>
-				<li><a href="">Nos services</a></li>
+				<li><a href="#services">Nos services</a></li>
 				<li><a href="">Nous contacter</a></li>
-				<li><a href="" class="nav__link">Demander un devis</a></li>
+				<li><a href="#devis" class="nav__link">Demander un devis</a></li>
 			</ul>
 		</nav>
 	</header>
@@ -32,8 +32,8 @@
 			<h1>La rénovation Énergétique Pour tous</h1>
 			<p>Nous sommes spécialisés du chauffage et de la climatisation à destination des professionnels et particuliers</p>
 			<div class="jumbo__links">
-				<a href="">Devis gratuit</a>
-				<a href="">A propos de nos services</a>
+				<a href="#devis">Devis gratuit</a>
+				<a href="#services">A propos de nos services</a>
 			</div>
 		</div>
 		<div class="jumbo__right">
@@ -42,7 +42,7 @@
 	</section>
 
 	<!--============= Services =============-->
-	<section class="services">
+	<section class="services" id="services">
 		<div class="container">
 			<div class="dots"><img src="./images/dots.png" alt="Dots"></div>
 			
@@ -86,6 +86,86 @@
 				<img src="./images/Maintance.png" alt="Installation">
 				<h4 class="other-title">Mainteance</h4>
 				<p class="other-p">Prévenir plutôt que guérir ! Nous pouvons intervenir sur vos installations de manière régulière afin d'éviter tout type d'incident</p>
+			</div>
+		</div>
+	</section>
+
+	<!--===================== Demander un devis ===============-->
+	<section id="devis">
+		<div class="container">
+			<div class="dots"><img src="./images/dots.png" alt="Dots"></div>
+			<div class="dev__container">
+				<div class="dev__left">
+					<img src="./images/img.jpg" alt="Ingenieur">
+				</div>
+				<div class="dev__right">
+					<h2>Demander un devis</h2>
+					<form action="">
+						<!-- Row 1 -->
+						<div class="form__row">
+							<div class="row__left">
+								<label for="logement">Type de logement</label>
+								<select name="logement" id="logement">
+									<option value="">- Selectionner -</option>
+									<option value="">Type de logement A</option>
+									<option value="">Type de logement B</option>
+									<option value="">Type de logement C</option>
+								</select>
+							</div>
+							<div class="row__right">
+								<label for="habitation">Surface de l'habitation</label>
+								<select name="habitation" id="habitation">
+									<option value="">- Aucun(e) -</option>
+									<option value="">Type de logement A</option>
+									<option value="">Type de logement B</option>
+									<option value="">Type de logement C</option>
+								</select>
+							</div>
+						</div>
+						<!-- Row 2 -->
+						<div class="form__row">
+							<div class="row__left">
+								<label for="chauffage">Type de chauffage</label>
+								<select name="chauffage" id="chauffage">
+									<option value="">- Selectionner -</option>
+									<option value="">Type de chauffage A</option>
+									<option value="">Type de chauffage B</option>
+									<option value="">Type de chauffage C</option>
+								</select>
+							</div>
+							<div class="row__right">
+								<label for="habitation">Propriétaire / Locataire</label>
+								<select name="habitation" id="habitation">
+									<option value="">- Aucun(e) -</option>
+									<option value="">Proprietaire Locataire A</option>
+									<option value="">Proprietaire Locataire B</option>
+								</select>
+							</div>
+						</div>
+						<!-- Row 3 -->
+						<div class="form__row">
+							<div class="row__left">
+								<label for="prenom">Prénom</label>
+								<input id="prenom" type="text" placeholder="Prénom" required>
+							</div>
+							<div class="row__right">
+								<label for="nom">Nom</label>
+								<input id="nom" type="text" placeholder="Nom" required>
+							</div>
+						</div>
+						<!-- Row 4 -->
+						<div class="form__row">
+							<div class="row__left">
+								<label for="phone">Téléphone</label>
+								<input id="phone" type="tel" placeholder="+221" required>
+							</div>
+							<div class="row__right">
+								<label for="mail">Adresse mail</label>
+								<input id="mail" type="email" placeholder="example@mail.com" required>
+							</div>
+						</div>
+					</form>
+				</div>
 			</div>
 		</div>
 	</section>
