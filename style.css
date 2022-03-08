@@ -13,9 +13,7 @@ body{
 	scroll-behavior: smooth;
 }
 /*--------------- header ------------*/
-header{
-	/*border: 1px solid;*/
-}
+
 nav{
 	max-width: 1120px;
 	width: 100%;
@@ -29,8 +27,17 @@ nav{
 	width: 20%;
 }
 .navbar-brand img{
-	min-width: 200px;
+	min-width: 150px;
 	width: 100%;
+}
+.toggle-icon{
+	display: none;
+	color: var(--title-color);
+	font-size: 1.2rem;
+	text-decoration: none;
+	position: absolute;
+	right: 2%;
+	top: 3%;
 }
 nav ul{
 	display: flex;
@@ -124,7 +131,35 @@ li > a{
 }
 
 @media(max-width: 741px){
-	nav ul{ display: none; }
+	nav{
+		flex-direction: column;
+		align-items: flex-start;
+	}
+	.nav-links{
+		display: none;
+		margin-top: 1rem;
+		width: 100%;
+	}
+	.nav-links.active{
+		display: flex;
+	}
+	nav ul{ 
+		flex-direction: column;
+		align-items: center;
+		width: 100%;
+    }
+
+    li > a{
+		text-decoration: none;
+		display: inline-block;
+		color: var(--title-color);
+		font-weight: 600;
+		padding: 0.2rem 0.5rem;
+		font-size: 0.85rem;
+	}
+    .toggle-icon{
+		display: block;
+	}
 	.jumbo{
 		flex-direction: column;
 	}
