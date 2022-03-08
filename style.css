@@ -10,6 +10,7 @@
 }
 body{
 	font-family: 'Poppins', sans-serif;
+	scroll-behavior: smooth;
 }
 /*--------------- header ------------*/
 header{
@@ -191,6 +192,37 @@ li > a{
 		grid-template-rows: repeat(2, 1fr);
 	}
 	.card-title{
+		font-size: 0.8rem;
+	}
+}
+
+/*-------------------- Other services ------------------*/
+.other-container{
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+}
+.other-card{
+	padding: 1rem;
+	text-align: center;
+}
+.other-title{
+	font-size: 1.5rem;
+	color: rgba(49, 183, 189, 1);
+}
+.other-p{
+	color: rgba(49, 49, 49, 0.8);
+	font-size: 0.9rem;
+	padding-top: 0.5rem;
+}
+@media (max-width: 768px){
+	.other-container{
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: repeat(2, 1fr);
+	}
+	.other-title{
+		font-size: 1rem;
+	}
+	.other-p{
 		font-size: 0.8rem;
 	}
 }
