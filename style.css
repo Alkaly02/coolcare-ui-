@@ -371,7 +371,8 @@ select option{
 	margin: 0 8px;
 }
 .slick-slide img{
-	width: 100%;
+	max-width: 8rem;
+	width: 90%;
 }
 .slick-slider{
 	position: relative;
@@ -410,4 +411,10 @@ select option{
 	font-size: 2rem;
 	font-weight: 700;
 	color: var(--title-color);
+}
+
+@media (max-width: 768px){
+	.partenaire h2{
+		font-size: 1.4rem;
+	}
 }

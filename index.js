@@ -35,8 +35,8 @@ $(document).ready(function(){
 // slide
 $(document).ready(function(){
   $('.customer-logos').slick({
-    slidesToShow: 4,
-    slidesToScroll: 2,
+    slidesToShow: 5,
+    slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 1500,
     arrows: false,
@@ -44,14 +44,14 @@ $(document).ready(function(){
     pauseOnHover: false,
     responsive: [{
         breakpoint: 768,
-        setting: {
-            slidesToShow: 2
+        settings: {
+            slidesToShow: 4
         }
     },
     {
-        breakpoint: 400,
-        setting: {
-            slidesToShow: 1
+        breakpoint: 520,
+        settings: {
+            slidesToShow: 3
         }
     }]
   });
