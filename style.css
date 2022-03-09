@@ -339,6 +339,33 @@ select option{
 	font-size: 1rem;
 	color: rgba(49, 49, 49, 1);
 }
+.label{
+	font-size: 1.1rem;
+}
+.checkbox{
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	margin-top: 0.5rem;
+}
+.checkbox input{
+	width: unset;
+	display: inline;
+}
+.checkbox label{
+	width: 100%;
+	display: block;
+	font-weight: 400;
+}
+button[type="submit"]{
+	width: 100%;
+	padding: 1.5rem;
+	font-size: 1rem;
+	border-radius: 5px;
+	font-weight: 600;
+	background: linear-gradient(rgba(49, 183, 189, 1), rgba(36, 132, 136, 1));
+	border: none;
+	color: white;
+}
 @media (max-width: 1000px){
 	.dev__left{
 		display: none;
@@ -364,6 +391,11 @@ select option{
 	input, select{
 		width: 100%;
 		font-size: 0.85rem;
+	}
+}
+@media (max-width: 550px){
+	.checkbox{
+		grid-template-columns: 1fr
 	}
 }
 /*------------------------------- Partenaires -----------------------*/
