@@ -552,3 +552,45 @@ footer ul a{
 		grid-template-columns: 1fr;
 	}
 }
+
+/*=================== contact ================*/
+#contact{
+	padding-top: 2rem;
+}
+#contact h2{
+	text-align: center;
+	font-size: 2.5rem;
+	color: var(--title-color);
+}
+#contact form{
+	max-width: 800px;
+	width: 95%;
+	margin: auto;
+	margin-bottom: 3rem;
+}
+#contact label{
+	font-size: 0.9rem;
+}
+#contact input, #contact textarea{
+	width: 100%;
+	font-size: 0.8rem;
+	font-weight: 500;
+}
+#contact textarea{
+	margin-bottom: 1rem;
+	margin-top: 0.2rem;
+	padding: 0.5rem;
+	border-radius: 5px;
+	color: var(--title-color);
+	border: 2px solid rgba(49, 49, 49, 0.2);
+	font-size: 1rem;
+	font-weight: 500;
+	background-color: whitesmoke;
+	resize: none;
+}
+
+@media (max-width: 500px){
+	#contact h2{
+		font-size: 2rem;
+	}
+}
