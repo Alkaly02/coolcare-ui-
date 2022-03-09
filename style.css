@@ -350,12 +350,13 @@ select option{
 .checkbox input{
 	width: unset;
 	display: inline;
-	vertical-align: text-top;
+	vertical-align: baseline;
 }
 .checkbox label{
 	width: 100%;
 	display: block;
 	font-weight: 400;
+	font-size: 1rem;
 }
 button[type="submit"]{
 	width: 100%;
