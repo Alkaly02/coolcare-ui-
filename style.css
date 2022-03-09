@@ -71,6 +71,9 @@ a:hover{
 	margin-left: 1rem;
 	padding: 0.8rem 1.5rem;
 }
+.nav__link:hover{
+	color: white;
+}
 
 /*------------------- Jumbotron ---------------------*/
 .container{
