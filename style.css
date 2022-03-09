@@ -350,6 +350,7 @@ select option{
 .checkbox input{
 	width: unset;
 	display: inline;
+	vertical-align: text-top;
 }
 .checkbox label{
 	width: 100%;
