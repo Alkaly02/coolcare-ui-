@@ -56,6 +56,9 @@ li > a{
 	padding: 0.8rem 1rem;
 	font-size: 0.85rem;
 }
+a:hover{
+	color: var(--blue-color);
+}
 .nav__link{
 	color: white;
 	background: linear-gradient( rgba(56, 138, 247, 1), rgba(46, 103, 176, 1));
@@ -450,5 +453,63 @@ button[type="submit"]{
 @media (max-width: 768px){
 	.partenaire h2{
 		font-size: 1.4rem;
+	}
+}
+
+/*--------------------- footer ---------------*/
+footer{
+	background-color: rgba(56, 138, 247, 0.2)
+}
+.logo{
+	padding-right: 2rem;
+}
+.logo img{
+	max-width: 250px;
+	width: 80%;
+}
+footer h3{
+	color: #476385;
+	font-size: 0.9rem;
+	margin-bottom: 0.5rem;
+}
+.logo p{
+	margin-top: 0.5rem;
+}
+footer p{
+	display: flex;
+	align-items: center;
+	margin-bottom: 0.8rem;
+}
+footer ul, footer a, footer p{
+	color: rgba(71, 99, 133, 1);
+	font-size: 0.8rem;
+}
+footer li{
+	padding: 0.3rem 0;
+}
+footer ul a{
+	padding: 0.1rem 0;
+	font-weight: 400;
+}
+.footer{
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-gap: 1rem;
+	/*grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: repeat(2, 1fr);*/
+}
+
+@media (max-width: 1000px){
+	.logo{
+		padding-right: initial;
+	}
+	.footer{
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: repeat(2, 1fr);
+	}
+}
+@media (max-width: 465px){
+	.footer{
+		grid-template-columns: 1fr;
 	}
 }
