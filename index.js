@@ -6,7 +6,7 @@ toggle.addEventListener('click', () =>{
 })
 
 
-
+// smooth scroll
 $(document).ready(function(){
   // Add smooth scrolling to all links
   $("a").on('click', function(event) {
@@ -31,3 +31,28 @@ $(document).ready(function(){
     } // End if
   });
 });
+
+// slide
+$(document).ready(function(){
+  $('.customer-logos').slick({
+    slidesToShow: 4,
+    slidesToScroll: 2,
+    autoplay: true,
+    autoplaySpeed: 1500,
+    arrows: false,
+    dots: false,
+    pauseOnHover: false,
+    responsive: [{
+        breakpoint: 768,
+        setting: {
+            slidesToShow: 2
+        }
+    },
+    {
+        breakpoint: 400,
+        setting: {
+            slidesToShow: 1
+        }
+    }]
+  });
+})
