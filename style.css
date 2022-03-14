@@ -84,10 +84,11 @@ a:hover{
 	margin: auto;
 	padding: 4rem 0.8rem;
 }
-.jumbo{
+#jumbo{
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	margin-top: 5rem !important;
 }
 /*----------- Jumbo-left --------*/
 .jumbo__left{
