@@ -16,12 +16,13 @@ body{
 }
 /*--------------- header ------------*/
 header{
-	position: sticky;
+	position: fixed;
 	top: 0;
 	z-index: 2;
+	width: 100%;
+	background-color: white;
 }
 nav{
-	background-color: white;
 	max-width: 1120px;
 	width: 100%;
 	margin: auto;
@@ -44,7 +45,6 @@ nav{
 	text-decoration: none;
 	position: absolute;
 	right: 3%;
-	top: 25%;
 }
 nav ul{
 	display: flex;
@@ -73,6 +73,9 @@ a:hover{
 }
 .nav__link:hover{
 	color: white;
+}
+.jumbo__links a:hover{
+	color: rgba(56, 138, 247, 1);
 }
 
 /*------------------- Jumbotron ---------------------*/
