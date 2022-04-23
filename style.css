@@ -600,6 +600,7 @@ footer ul a{
 	font-weight: 500;
 	background-color: whitesmoke;
 	resize: none;
+	outline: none;
 }
 
 @media (max-width: 500px){
