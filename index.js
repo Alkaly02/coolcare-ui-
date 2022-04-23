@@ -57,5 +57,7 @@ $(document).ready(function(){
 const allImages = document.querySelectorAll('img');
 
 allImages.forEach(image => {
+    if(!image.classList.contains('no-lazy')) {
         image.setAttribute('loading', 'lazy')
+    }
 })
