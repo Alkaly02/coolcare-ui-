@@ -54,3 +54,8 @@ $(document).ready(function(){
   })
 });
 
+const allImages = document.querySelectorAll('img');
+
+allImages.forEach(image => {
+        image.setAttribute('loading', 'lazy')
+})
