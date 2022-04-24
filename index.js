@@ -50,7 +50,10 @@ $(document).ready(function(){
   })
 
   $('.nav-list').click( () => {
-    $('.nav-links').slideToggle();
+    console.log(screen.width)
+    if(screen.width < 741){
+        $('.nav-links').slideToggle();
+    }
   })
 });
 
