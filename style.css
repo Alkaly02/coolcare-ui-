@@ -10,6 +10,8 @@
 }
 html {
 	background-color: white;
+	scroll-behavior: smooth;
+	scroll-padding-top: 50px;
 }
 body{
 	font-family: 'Poppins', sans-serif;
@@ -82,7 +84,7 @@ a:hover{
 .container{
 	max-width: 1120px;
 	margin: auto;
-	padding: 8rem 0.8rem;
+	padding: 4rem 0.8rem;
 }
 #jumbo{
 	display: flex;
